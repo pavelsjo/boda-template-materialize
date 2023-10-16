@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', async () => {
+  // Iinicializa Materialize
+  M.AutoInit();
 
   // Función para calcular los días, horas, minutos y segundos restantes entre dos fechas
   function calcularTiempoRestante(fechaObjetivo) {
@@ -31,4 +34,6 @@
     
   // Llama a la función para mostrar los días restantes al cargar la página
   mostrarDiasRestantes();
+});
+
 
