@@ -2,118 +2,101 @@
 <html>
   <head>
     <!-- custom fonts -->
-    
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis" rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    
-    <div class="container">
-        <div class="row z-depth-4">
-            <div class="col s12">
-              <div class="card ">
-                <div class="card-image ">
-                  <img src="images/01-card.jpg">
-                  <span class="card-title" ><div><h2>Nos Casamos </h2><h6  style="font-family: 'Roboto';">Pablo & Daniela</h6></div></span>
-                </div>
-                <div class="card-content center-align grey-text text-darken-3">
-                  <h3>Estás invitado!</h3>
-                  <p class="brown-text text-darken-3">Queremos que seas parte de este momento tan especial para nosotros!.</p>
-                </div>
-                <div class="card-action">
-                  <div class="cuenta-regresiva row">
-                     <div class="col s2"></div>
-                      <div class="col s2 ">
-                          <div class="circulo" id="dias-restantes"></div>
-                          <div class="etiqueta">Días</div>
-                      </div>
-                      <div class="col s2">
-                          <div class="circulo" id="horas-restantes"></div>
-                          <div class="etiqueta">Horas</div></div>
-                      <div class="col s2">
-                          <div class="circulo" id="minutos-restantes"></div>
-                          <div class="etiqueta">Min</div>
-                      </div>
-                      <div class="col s2">
-                          <div class="circulo" id="segundos-restantes"></div>
-                          <div class="etiqueta">Seg</div>
-                      </div>
-                      <div class="col s2"></div>
-                  </div>              
+
+      <!-- Page Content goes here -->
+      <div class="parallax-container">
+        <div class="white-text center-align"> 
+          <h2 style="font-family:Dancing Script;">Nos casamos</h2>
+          <h6 style="font-weight: bold;">Pablo & Daniela</h6>
+        </div>
+        <div class="parallax"><img class="responsive-img" src="images/01-card.jpg"></div>
+      </div>
+      
+      <div class="divider"></div>
+      <section class="section">
+          <div class="row">
+            <div class="col s12 m6 center-align">
+              <div class="brown-text text-lighten-3">
+                <h3 style="font-family:Dancing Script">Estás invitado!</h3>
+                <h6 class="brown-text text-darken-3">Queremos que seas parte</h6>
+                <h6 class="brown-text text-darken-3">de este momento tan especial.</h6>
+              </div>
+              <div class="center-align">
+                <div class="row">
+                  <div class="col s2 offset-s2">
+                    <a class="btn-floating btn-large waves-effect waves-light brown lighten-3 white-text" id="dias-restantes"><i class="material-icons"></i></a>
+                    <p>Dias</p>
+                  </div>
+                  <div class="col s2">
+                    <a class="btn-floating btn-large waves-effect waves-light brown lighten-3 white-text" id="horas-restantes"><i class="material-icons"></i></a>
+                    <p>Hrs</p>
+                  </div>
+                  <div class="col s2">
+                    <a class="btn-floating btn-large waves-effect waves-light brown lighten-3 white-text" id="minutos-restantes"><i class="material-icons"></i></a>
+                    <p>Seg</p>
+                  </div>
+                  <div class="col s2">
+                    <a class="btn-floating btn-large waves-effect waves-light brown lighten-3 white-text" id="segundos-restantes"><i class="material-icons"></i></a>
+                    <p>Min</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-    </div>
-    
-    <div class="container" style="font-family: 'Roboto';">
-      <div class="row z-depth-3">
-        <div class="col s12 m4 ">
-          <div class="card ">
-            <div class="card-image ">
-              <img class="responsive-img" src="images/cofre.jpeg">
-            </div>
-            <div class="card-content center-align grey-text text-darken-3">
-              <h2>CEREMONIA</h2>
-              <p class="brown-text text-darken-3">Iglesia de Dios Ministerial de Jesucristo Internacional</p>
-              <p class="brown-text text-darken-3">Te esperamos el</p>
+        </section>
+
+        <div class="divider"></div>
+        <section class="section">
+          <div class="col s8 offset-s2 m2">
+            <div class="center-align">
+              <img src="images/cofre.jpeg">
+              <h5 style="font-weight: bold;">CEREMONIA</h5>
+              <p class="center-align brown-text text-darken-3">Iglesia de Dios Ministerial de Jesucristo Internacional</p>
+              <p class="center-align brown-text text-darken-3">Te esperamos el</p>
               <h5>16 DIC | 04:00PM</h5>
-              <p class="brown-text text-darken-3">Barrio Villa Crespo - Acevedo 49</p>
-            </div>
-            <div class="card-action  center-align">
-              <a class="waves-effect waves-light btn brown lighten-3" href="https://maps.app.goo.gl/JvyBJw7pWjTLUUJV9s"><i class="material-icons right">location_on</i>Ver Ubicacion</a>             
+              <p class="center-align brown-text text-darken-3">Barrio Villa Crespo - Acevedo 49</p>
+              <a class="waves-effect waves-light btn brown lighten-3" href="https://maps.app.goo.gl/JvyBJw7pWjTLUUJV9s"><i class="material-icons right">location_on</i>Ver Ubicacion</a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div class="container" style="font-family: 'Roboto';">
-      <div class="row z-depth-3">
-        <div class="col s12 m4 ">
-          <div class="card ">
-            <div class="card-image ">
-              <img class="responsive-img" src="images/dino.jpeg">
-            </div>
-            <div class="card-content center-align grey-text text-darken-3">
-              <h2>CELEBRACION</h2>
-              <p class="brown-text text-darken-3">Leo Recepciones</p>
-              <p class="brown-text text-darken-3">La celebración será el</p>
+        <div class="divider"></div>
+        <section class="section">
+          <div class="col s8 offset-s2 m2">
+            <div class="center-align">
+              <img src="images/dino.jpeg">
+              <h5 style="font-weight: bold;">CELEBRACION</h5>
+              <p class="center-align brown-text text-darken-3">Leo Recepciones</p>
+              <p class="center-align brown-text text-darken-3">La celebración será el</p>
               <h5>16 DIC | 09:00PM</h5>
-              <p class="brown-text text-darken-3">Av. Álvarez Jonte 4040</p>
-            </div>
-            <div class="card-action  center-align">
-              <a class="waves-effect waves-light btn brown lighten-3" href="https://maps.app.goo.gl/7SFwmokAHqafWg2f6"><i class="material-icons right">location_on</i>Ver Ubicacion</a>             
-            </div>
+              <p class="center-align brown-text text-darken-3">Av. Álvarez Jonte 4040</p>
+              <a class="waves-effect waves-light btn brown lighten-3" href="https://maps.app.goo.gl/JvyBJw7pWjTLUUJV9s"><i class="material-icons right">location_on</i>Ver Ubicacion</a>
+            </div>          
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div class="container" style="font-family: 'Roboto';">
-      <div class="row z-depth-3">
-        <div class="col s12 m4 ">
-          <div class="card ">
-            <div class="card-image ">
-              <img class="responsive-img" src="images/ropa.png">
-            </div>
-            <div class="card-content center-align grey-text text-darken-3">
-              <h2>DREESCODE</h2>
-              <p class="brown-text text-darken-3">Formal - Decoroso</p>
-            </div>
+        <div class="divider"></div>
+        <section class="section">
+          <div class="col s8 offset-s2 m2">
+            <div class="center-align">
+              <img src="images/ropa.png">
+              <h5 style="font-weight: bold;">DREESCODE</h5>
+              <p class="center-align brown-text text-darken-3">Formal - Decoroso</p>
+            </div>          
           </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+        </section>
 
 
   <!--JavaScript at end of body for optimized loading-->
@@ -121,9 +104,10 @@
   <script src="js/app.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
-        // Iinicializa Materialize
-        M.AutoInit();
+      // Iinicializa Materialize
+      M.AutoInit();
     });
   </script>
+
   </body>
 </html>
