@@ -77,3 +77,4 @@ Para más información, [visita el sitio web](URL_DEL_SITIO_WEB).
 - https://ar.pinterest.com/pin/224757837644491191/sent/?invite_code=16aac8c72bde43ba8a664240c57f3da0&sender=918453055165377184&sfo=1
 - https://weddingfy.app/pinterest/?pp=1
 - https://www.pinterest.com.mx/pin/31032684925733643/
+- https://tinypng.com/
