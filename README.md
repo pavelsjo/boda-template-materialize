@@ -1,8 +1,6 @@
 # Página Web de Boda
 
-Este es un simple sitio web para anunciar una boda y proporcionar información relevante sobre la ceremonia, la recepción y más.
-
-![Imagen de la boda](images/01-card.jpg)
+Este es un sitio web para anunciar una boda y proporcionar información relevante sobre la ceremonia, la recepción y más.
 
 ## Contenido
 

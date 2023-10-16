@@ -13,5 +13,5 @@ form.addEventListener('submit', (e) => {
     .then(data => {
         console.log(data)});
         form.reset();
-        M.toast({ html: '<h1>Gracias por confirmanos tu asistencia. Esperamos verte!.</h1>.'});
+        M.toast({ html: '<h1>Gracias por confirmanos tu asistenciad.</h1>.'});
 });
