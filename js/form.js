@@ -12,4 +12,5 @@ form.addEventListener('submit', (e) => {
     .then(res => res.text())
     .then(data => {
         console.log(data)});
+        form.reset();
 });
