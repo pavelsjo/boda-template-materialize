@@ -5,7 +5,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     let data = new FormData(form);
     console.log(data)
-    fetch('https://script.google.com/macros/s/AKfycbz1fQ1U_lW6_-yTNbeeYg9QpEXyuIJhvSY3IJlXaNV5WFSxQUN0Vv_1Xy_8CocYy6mT/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzhnkwvExa6xoIDSSD-rQZKweGu-AT2VvIf0J8tKLro4V3_e0760f6ZrInLvqVjBqgN/exec', {
         method: "POST",
         body: data
     })
