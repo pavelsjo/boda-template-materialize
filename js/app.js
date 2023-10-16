@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Actualiza el tiempo restante cada segundo
   setInterval(mostrarTiempoRestante, 1000);
-    
-  // Llama a la función para mostrar los días restantes al cargar la página
-  mostrarDiasRestantes();
 });
 
 
