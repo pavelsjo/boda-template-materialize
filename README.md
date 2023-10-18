@@ -76,3 +76,4 @@ Para más información, [visita el sitio web](URL_DEL_SITIO_WEB).
 - https://weddingfy.app/pinterest/?pp=1
 - https://www.pinterest.com.mx/pin/31032684925733643/
 - https://tinypng.com/
+- https://favicon.io/favicon-converter/
