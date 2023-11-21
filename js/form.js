@@ -3,7 +3,7 @@ const formSection = document.getElementById('form-asistencia');
 const positiveResponseSection = document.getElementById('form-asistencia-positiva');
 const negativeResponseSection = document.getElementById('form-asistencia-negativa');
 const buttonEnviar = document.getElementById('boton-enviar');
-const buttonAgregar = document.getElementById('boton-agregar');
+const buttonCerrarFormaPositiva = document.getElementById('boton-cerrar-forma-positiva');
 const buttonCerrar = document.getElementById('boton-cerrar');
 const loader = document.getElementById('loader');
 
@@ -12,7 +12,7 @@ buttonEnviar.addEventListener('click', (e) => {
     loader.style.display = 'block';
 });
 
-buttonAgregar.addEventListener('click', (e) => {
+buttonCerrarFormaPositiva.addEventListener('click', (e) => {
 
     formSection.style.display = 'block';
     positiveResponseSection.style.display = 'none';
