@@ -3,15 +3,13 @@ const formSection = document.getElementById('form-asistencia');
 const positiveResponseSection = document.getElementById('form-asistencia-positiva');
 const negativeResponseSection = document.getElementById('form-asistencia-negativa');
 const buttonEnviar = document.getElementById('boton-enviar');
-const buttonCerrarFormaPositiva = document.getElementById('boton-cerrar-forma-positiva');
+const buttonAgregar = document.getElementById('boton-agregar');
 const buttonCerrar = document.getElementById('boton-cerrar');
 const loader = document.getElementById('loader');
 
-buttonCerrarFormaPositiva.addEventListener('click', (e) => {
-
+buttonAgregar.addEventListener('click', (e) => {
     formSection.style.display = 'block';
     positiveResponseSection.style.display = 'none';
-
 });
 
 buttonCerrar.addEventListener('click', (e) => {
@@ -31,7 +29,7 @@ form.addEventListener('submit', (e) => {
     const data = new FormData(form);
     const respuesta = data.get('assist');
 
-    fetch('https://script.google.com/macros/s/AKfycbzju1AjGjYNm0phwGSmuvttWnJ3Q0oJCNGzx2obSz1-J7KXHE8SS-skY9ArhJWb7-2B/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxF1M95BCkIuiewi3jG-3I9570BZmN7JsmhytsSYpLNSR1ikyMs_BZKtxumifHygIwz/exec', {
         method: "POST",
         body: data
     })
