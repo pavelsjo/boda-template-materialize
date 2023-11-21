@@ -32,7 +32,7 @@ form.addEventListener('submit', (e) => {
     const data = new FormData(form);
     const respuesta = data.get('assist');
 
-    fetch('https://script.google.com/macros/s/AKfycbzhnkwvExa6xoIDSSD-rQZKweGu-AT2VvIf0J8tKLro4V3_e0760f6ZrInLvqVjBqgN/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzju1AjGjYNm0phwGSmuvttWnJ3Q0oJCNGzx2obSz1-J7KXHE8SS-skY9ArhJWb7-2B/exec', {
         method: "POST",
         body: data
     })
