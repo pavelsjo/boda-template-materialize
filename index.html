@@ -130,7 +130,8 @@
         </section>
 
         <div class="divider"></div>
-        <section class="section">
+        <!-- form -->
+        <section class="section" id="form-asistencia">
           <div class="row center-align">
             <h5 style="font-weight: bold;">CONFIRMAR ASISTENCIA</h5>
             <p class=" brown-text text-darken-3">Por favor, confirmanos individualmente antes del 9 de diciembre:</p>
@@ -162,10 +163,32 @@
           </div>
         </section>
 
-        <section>
+        <!-- respuesta form positiva-->
+        <section class="brown lighten-4 " id="form-asistencia-positiva" style="display: none;">
+          <div class="row center-align">
+            <div class="col s12 m5">
+              <div class="card-panel brown lighten-3 white-text">
+                <p><i class="large material-icons">check_circle</i></p>
+                <h5>¡Gracias por confirmar tu asistencia!.</h5>
+                <p>Tu presencia significa mucho para nosotros y estamos ansiosos por verte allí. </p>
+                <a class="waves-effect waves-light btn brown lighten-3" id="boton-agregar"><i class="material-icons right">group_add</i>Añadir acompañante</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <div class="row center-align"></div>
-
+        <!-- respuesta form negativa-->
+        <section class="brown lighten-4" id="form-asistencia-negativa" style="display: none;">
+          <div class="row center-align">
+            <div class="col s12 m5">
+              <div class="card-panel brown lighten-3 white-text">
+                <p><i class="large material-icons">local_florist</i></p>
+                <h5>Sabemos que nos acompañaras en tu pensamiento y corazón.</h5>
+                <p>¡Apreciamos mucho tu sinceridad al hacernos saber que no podrás asistir y esperamos que pronto tengamos oportunidades de compartir juntos! </p>
+                <a class="waves-effect waves-light btn brown lighten-3" id="boton-cerrar"><i class="material-icons right">close</i>Cerrar</a>
+              </div>
+            </div>
+          </div>
         </section>
 
         <div class="parallax-container">
