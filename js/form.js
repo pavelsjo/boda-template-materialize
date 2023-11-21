@@ -2,9 +2,15 @@ const form = document.querySelector("form");
 const formSection = document.getElementById('form-asistencia');
 const positiveResponseSection = document.getElementById('form-asistencia-positiva');
 const negativeResponseSection = document.getElementById('form-asistencia-negativa');
+const buttonEnviar = document.getElementById('boton-enviar');
 const buttonAgregar = document.getElementById('boton-agregar');
 const buttonCerrar = document.getElementById('boton-cerrar');
+const loader = document.getElementById('loader');
 
+buttonEnviar.addEventListener('click', (e) => {
+    buttonEnviar.classList.toggle('disabled');
+    loader.style.display = 'block';
+});
 
 buttonAgregar.addEventListener('click', (e) => {
 
@@ -35,7 +41,9 @@ form.addEventListener('submit', (e) => {
         if (data === "Success") {
 
             form.reset();
+            buttonEnviar.classList.toggle('disabled');
             formSection.style.display = 'none';
+            loader.style.display = 'none';
         
             if(respuesta === "Sí") {
                  positiveResponseSection.style.display = 'block';
