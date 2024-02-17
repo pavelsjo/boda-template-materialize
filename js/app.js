@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const fechaActual = new Date();
     const diferenciaTiempo = fechaObjetivo - fechaActual;
   
-    const segundos = Math.floor((diferenciaTiempo / 1000) % 60);
-    const minutos = Math.floor((diferenciaTiempo / 1000 / 60) % 60);
-    const horas = Math.floor((diferenciaTiempo / (1000 * 60 * 60)) % 24);
-    const dias = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
+    const segundos = Math.abs(Math.floor((diferenciaTiempo / 1000) % 60)) ;
+    const minutos = Math.abs(Math.floor((diferenciaTiempo / 1000 / 60) % 60)) ;
+    const horas = Math.abs(Math.floor((diferenciaTiempo / (1000 * 60 * 60)) % 24));
+    const dias = Math.abs(Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24)));
   
     return { dias, horas, minutos, segundos };
   }
